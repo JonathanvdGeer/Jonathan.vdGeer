@@ -301,17 +301,25 @@ a:hover {
 
 
 /* CONTACT HREF */
+.backgroundCard {
+      background-color: #181818;
+}
+
 .contactCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 250px;
-  margin: auto;
-  text-align: center;
-  font-family: lato;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: lato;
+}
+
+.contactCard img {
+    margin-top: 25px;
 }
 
 .contactCard .title {
-  color: grey;
-  font-size: 18px;
+    color: grey;
+    font-size: 18px;
 }
 
 .contactCard p {
@@ -320,16 +328,16 @@ a:hover {
 }
 
 .contactCard button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: black;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;  
-  font-size: 18px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;  
+    font-size: 18px;
     margin: 0;
     background-color: #f1f1f1;
     text-transform: uppercase;
@@ -340,9 +348,9 @@ a:hover {
 }
 
 .contactCard a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
 }
 
 .container {
