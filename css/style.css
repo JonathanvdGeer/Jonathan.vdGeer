@@ -230,6 +230,7 @@ a:hover {
     line-height: 1.75;
 /*    margin-top: 0;*/
     margin-bottom: 1rem;
+    font-size: 0.9em;
 }
 
 .page-section h2.section-heading {
@@ -271,7 +272,7 @@ a:hover {
     width: 95%;
     height: 95%;
     vertical-align: middle;
-    background-color: white;
+    background-color: none;
 }
 
 .LogoSkills img {
