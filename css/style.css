@@ -176,6 +176,123 @@ a:hover {
 }
 
 
+/* MIJN SKILLS */
+.page-section {
+    margin-top: 100px;
+}
+
+.containerMijnSkills {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rowSkills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.page-section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #FF9966;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+    font-family: 'Kaushan Script';
+    color: #D3D3D3;
+/*    padding-top: 1em;*/
+}
+
+.text-muted {
+    color: white;
+    line-height: 1.75;
+/*    margin-top: 0;*/
+    margin-bottom: 1rem;
+}
+
+.page-section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.page-section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: roboto, lato;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    padding: 1em;
+}
+
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.5em;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+.logoSkills{
+    width: 95%;
+    height: 95%;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.LogoSkills img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* ALL SKILLS BARS CONTAINER */
+.container {
+    display: flex;
+    flex: 1;
+    align-self: auto;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        flex-flow: column wrap;
+    }
+}
+
 /* SOFTWARE SKILLS BARS */
 .containerSoftwareSkill {
     display: inline-block;
@@ -199,7 +316,7 @@ a:hover {
 
 .containerSkill, .containerSoftwareSkills, h2 {
     font-family: roboto;
-    color: aliceblue;
+    color: white;
     font-weight: bold;
 }
 
@@ -300,73 +417,6 @@ a:hover {
 }
 
 
-/* CONTACT HREF */
-.backgroundCard {
-      background-color: #181818;
-}
-
-.contactCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 250px;
-    margin: auto;
-    text-align: center;
-    font-family: lato;
-}
-
-.contactCard img {
-    margin-top: 25px;
-}
-
-.contactCard .title {
-    color: grey;
-    font-size: 18px;
-}
-
-.contactCard p {
-    margin: 5px;
-    color: goldenrod;
-}
-
-.contactCard button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: black;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;  
-    font-size: 18px;
-    margin: 0;
-    background-color: #f1f1f1;
-    text-transform: uppercase;
-    font-family: Lato;
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-
-.contactCard a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-}
-
-.container {
-    display: flex;
-    flex: 1;
-    align-self: auto;
-    justify-content: center;
-}
-
-@media screen and (max-width:1100px) {
-    .container {
-        flex-flow: column wrap;
-    }
-}
-
-
 /* FILTER GALLERY */
 .filterDiv {
     display: none;
@@ -431,6 +481,8 @@ a:hover {
     color: white;
 }
 
+
+/* CONTACT PAGE */
 .box {
     position: absolute;
     top: 50%;
@@ -527,6 +579,10 @@ a:hover {
     transition-delay: 0.6s;
 }
 
+.box:hover .socail-icon li:nth-child(5) a {
+    transition-delay: 0.8s;
+}
+
 .details {
     position: absolute;
     bottom: 0;
@@ -552,7 +608,6 @@ a:hover {
     font-size: 16px;
 }
 
-
 /* BACK BUTTONS */
 button {
     border: none;
@@ -572,3 +627,58 @@ button {
     background-color: #0082e6;
     color: white;
     }
+
+
+/* CONTACT HREF TO CONTACT PAGE */
+.backgroundCard {
+      background-color: #181818;
+}
+
+.contactCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: lato;
+}
+
+.contactCard img {
+    margin-top: 25px;
+}
+
+.contactCard .title {
+    color: grey;
+    font-size: 18px;
+}
+
+.contactCard p {
+    margin: 5px;
+    color: goldenrod;
+}
+
+.contactCard button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;  
+    font-size: 18px;
+    margin: 0;
+    background-color: #f1f1f1;
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.contactCard a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
