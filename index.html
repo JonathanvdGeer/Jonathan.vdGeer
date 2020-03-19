@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,14 +51,14 @@
         <!-- MIJN SKILLS -->
         <section class="page-section" id="services">
             <div class="containerMijnSkills">
-               
+
                 <div class="rowSkills">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading text-uppercase">My Ability</h2>
                         <h3 class="section-subheading text-muted">Development over the years.</h3>
                     </div>
                 </div>
-                
+
                 <div class="rowSkills text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -67,7 +67,7 @@
                         <h4 class="service-heading">Events &#38; Designing</h4>
                         <p class="text-muted">Tijdens verschillende soorten evenementen, websites en apps kom ik altijd gave designs tegen wat mij inspireert.</p>
                     </div>
-                    
+
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <img class="logoSkills" src="img/Skills/laptop.svg" alt="Digitiale Tools Logo">
@@ -75,7 +75,7 @@
                         <h4 class="service-heading">Digital Tools</h4>
                         <p class="text-muted"> Verschillende tools waar ik goed overweg kan kun je hieronder vinden.</p>
                     </div>
-                    
+
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <img class="logoSkills" src="img/Skills/UIUX.svg" alt="UX en UI Logo">
@@ -83,7 +83,7 @@
                         <h4 class="service-heading">UX en UI design</h4>
                         <p class="text-muted">Ook heb ik veel projecten, maar ook cases ontworpen en getest door middel van: User Experience en User Interface theorie methodes.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -187,12 +187,34 @@
             <button class="btn" onclick="filterSelection('prjcts')"> Projects</button>
         </div>
 
+        <!-- MELKWEG MODAL -->
+        <div id="Melkweg" class="modal">
+
+            <!-- Modal content -->
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h1>Melkweg Poster</h1>
+                    <h3>Visual</h3>
+                </div>
+                
+                <div class="modalBody">
+                    <img class="modalImg" src="img/Banners/Visual/Melkwegposter.jpg" alt="Melkweg Poster" style="width:100%">         
+                </div>
+                
+                <div class="modalTekst">
+                   <h3>Samenvatting</h3>
+                    <p>De poster als evenementen agenda voor de Melkweg was een hele uitdaging. Er moest gewerkt worden vanuit de huisstijl van de club en er was een grote hoeveelheid informatie die in de poster moest worden verwerkt. Het was hier dus belangrijk om met tekenstijlen en stramienen te werken. Daarom heb ik er voor gekozen om de agenda in InDesign te maken. </p>
+                </div>           
+            </div>
+        </div>
+
+
         <!-- MY WORK GALLERY -->
         <div class="containerGallery">
-            <div class="filterDiv vis"> <a href="#">
-                    <img src="img/Banners/Visual/Melkwegposter.jpg" alt="Melkweg Poster Banner" /></a></div>
-            <div class="filterDiv ux"><a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A6e8ecea2-328c-4728-94c9-121d63922803"><img src="img/Banners/UX/UCD/UCD.jpg" alt="HvA Fast Coffee App Poster" /></a></div>
-            <div class="filterDiv ui"><a href="#"><img src="img/Banners/UI/Frontend/TravelGuideWebsiteCover.jpg" alt="Travel Guide Website" /></a></div>
+            <div id="myBtn" class="filterDiv vis"><img src="img/Banners/Visual/Melkwegposter.jpg" alt="Melkweg Poster Banner" /></div>
+            <div class="filterDiv ux"><a href="#"><img src="img/Banners/UX/UCD/UCD.jpg" alt="HvA Fast Coffee App Poster" /></a></div>
+            <div class="filterDiv ui"><a href="https://jonathanvdgeer.github.io/Project-web/index.html" target="_blank"><img src="img/Banners/UI/Frontend/TravelGuideWebsiteCover.jpg" alt="Travel Guide Website" /></a></div>
             <div class="filterDiv prjcts"><img src="img/Banners/Projects/ProjectBeyond/ProjectBeyondCover.jpg" alt="Aqua-Buddy Poster Cover" /></div>
 
             <div class="filterDiv vis"><img src="img/Banners/Visual/Content/AnimalPlanet.png" alt="Animal Planet Cover" /></div>
@@ -210,7 +232,7 @@
             <div class="filterDiv ui"><img src="img/Banners/UI/IA/NinjaWarriorBanner.jpg" alt="Ninja Warrior Designer Document" /></div>
             <!--            <div class="filterDiv prjcts">Projects</div>-->
 
-            <div class="filterDiv vis"><img src="img/Banners/Visual/Vormgeving/HVANAGrid.jpg" alt="HVANA Grid Work" /></div>
+            <div id="myBtn" class="filterDiv vis"><img src="img/Banners/Visual/Vormgeving/HVANAGrid.jpg" alt="HVANA Grid Work" /></div>
             <!--            <div class="filterDiv ux">UX</div>-->
             <div class="filterDiv ui"><img src="img/Banners/UI/Spotywrist/SpotywristPoster.jpg" alt="Spotywrist Wristband Concept Poster" /></div>
             <!--            <div class="filterDiv prjcts">Projects</div>-->
