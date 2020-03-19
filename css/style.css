@@ -178,7 +178,7 @@ a:hover {
 
 /* MIJN SKILLS */
 .page-section {
-    margin-top: 100px;
+/*    margin-top: 100px;*/
 }
 
 .containerMijnSkills {
@@ -187,13 +187,19 @@ a:hover {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .rowSkills {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+}
+
+@media screen and (max-width:740px) {
+    .rowSkills {
+        flex-flow: column wrap;
+    }
 }
 
 .text-center {
@@ -227,10 +233,10 @@ a:hover {
 
 .text-muted {
     color: white;
-    line-height: 1.75;
-/*    margin-top: 0;*/
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 0.9em;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .page-section h2.section-heading {
@@ -243,17 +249,27 @@ a:hover {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 75px;
+    margin-bottom: 30px;
     text-transform: none;
     font-family: roboto, lato;
 }
 
+.col-md-4 {
+    max-width: 450px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
 .col-md-4 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     position: relative;
     padding: 1em;
 }
+*/
 
 .fa-stack {
     display: inline-block;
@@ -297,22 +313,22 @@ a:hover {
 /* SOFTWARE SKILLS BARS */
 .containerSoftwareSkill {
     display: inline-block;
-    margin-top: 2.5em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
     min-width: 350px;
     max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3em;
 }
 
 
 /* VAKGEBIEDEN SKILLS BARS */
 .containerSkill {
     display: inline-block;
-    margin-top: 2.5em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-top: 0.5em;
     min-width: 350px;
     max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .containerSkill, .containerSoftwareSkills, h2 {
