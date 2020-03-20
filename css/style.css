@@ -88,7 +88,7 @@ a:hover {
     }
 
     header nav ul {
-        position:absolute;
+        position: absolute;
         width: 100%;
         height: 35vh;
         background: #2c3e50;
@@ -114,7 +114,7 @@ a:hover {
         color: #0082e6;
     }
 
-    #check:checked ~ ul {
+    #check:checked~ul {
         left: 0;
     }
 }
@@ -129,7 +129,7 @@ a:hover {
 
 /* CONTAINER: SHORT INFO */
 .containerInfo article {
-    font-family: roboto;
+    font-family: 'Roboto';
     color: black;
 }
 
@@ -145,6 +145,7 @@ a:hover {
     padding: 1em;
     margin: .5em;
     background-color: white;
+    height: 170px;
 }
 
 @media screen and (max-width:810px) {
@@ -178,7 +179,7 @@ a:hover {
 
 /* MIJN SKILLS */
 .page-section {
-/*    margin-top: 100px;*/
+    /*    margin-top: 100px;*/
 }
 
 .containerMijnSkills {
@@ -228,7 +229,7 @@ a:hover {
     text-transform: none;
     font-family: 'Kaushan Script';
     color: #D3D3D3;
-/*    padding-top: 1em;*/
+    /*    padding-top: 1em;*/
 }
 
 .text-muted {
@@ -284,7 +285,7 @@ a:hover {
     font-size: 4em;
 }
 
-.logoSkills{
+.logoSkills {
     width: 95%;
     height: 95%;
     vertical-align: middle;
@@ -331,7 +332,9 @@ a:hover {
     margin-left: auto;
 }
 
-.containerSkill, .containerSoftwareSkills, h2 {
+.containerSkill,
+.containerSoftwareSkills,
+h2 {
     font-family: roboto;
     color: white;
     font-weight: bold;
@@ -353,7 +356,7 @@ a:hover {
     margin: 0;
     background: #393a3d;
     border-radius: 5px 0 0 5px;
-    box-shadow: 0 7px 7px rgba(0,0,0,0.4);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -364,7 +367,7 @@ a:hover {
     z-index: 1;
 }
 
-.progress .progress-title:after{
+.progress .progress-title:after {
     content: "";
     border-left: 17px solid #393a3d;
     border-top: 17px solid transparent;
@@ -373,32 +376,34 @@ a:hover {
     top: 0;
     right: -17px;
 }
-.progress .progress-bar{
+
+.progress .progress-bar {
     box-shadow: none;
     border-radius: 0;
     position: relative;
     -webkit-animation: animate-positive 2s;
     animation: animate-positive 2s;
 }
-.progress .progress-bar:after{
+
+.progress .progress-bar:after {
     content: "";
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
     background: #fff;
     position: absolute;
     right: -5px;
     top: -12px;
 }
 
-.progress .progress-value{
+.progress .progress-value {
     width: 45px;
     height: 30px;
     line-height: 30px;
     border-radius: 3px;
     background: #393a3d;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     font-size: 15px;
     font-weight: 700;
     color: #fff;
@@ -408,7 +413,7 @@ a:hover {
     right: -17px;
 }
 
-.progress .progress-value:after{
+.progress .progress-value:after {
     content: "";
     border-top: 7px solid #393a3d;
     border-left: 7px solid transparent;
@@ -418,19 +423,48 @@ a:hover {
     left: 35%;
 }
 
-.progress.green .progress-bar:after{ border: 5px solid #21da9a; }
-.progress.pink .progress-bar:after{ border: 5px solid #ff1170; }
-.progress.blue .progress-bar:after{ border: 5px solid #294bdc; }
-.progress.yellow .progress-bar:after{ border: 5px solid #ffa900; }
-.progress.orange .progress-bar:after{ border: 5px solid #ff8c00; }
-.progress.red .progress-bar:after{ border: 5px solid #ff0000; }
-.progress.purple .progress-bar:after{ border: 5px solid #9932cc; }
-.progress.lightblue .progress-bar:after{ border: 5px solid #00bfff; }
-@-webkit-keyframes animate-positive{
-    0% { width: 0; }
+.progress.green .progress-bar:after {
+    border: 5px solid #21da9a;
 }
-@keyframes animate-positive{
-    0% { width: 0; }
+
+.progress.pink .progress-bar:after {
+    border: 5px solid #ff1170;
+}
+
+.progress.blue .progress-bar:after {
+    border: 5px solid #294bdc;
+}
+
+.progress.yellow .progress-bar:after {
+    border: 5px solid #ffa900;
+}
+
+.progress.orange .progress-bar:after {
+    border: 5px solid #ff8c00;
+}
+
+.progress.red .progress-bar:after {
+    border: 5px solid #ff0000;
+}
+
+.progress.purple .progress-bar:after {
+    border: 5px solid #9932cc;
+}
+
+.progress.lightblue .progress-bar:after {
+    border: 5px solid #00bfff;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
 }
 
 
@@ -483,27 +517,36 @@ a:hover {
 
 /* MODAL POPUP (Background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modalContent {
-  background-color: #282828;
-  font-family: roboto;
-  margin: auto;
-  padding: 20px;
-  width: 80%;
-  color: white;
+    background-color: #282828;
+    font-family: roboto;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    color: white;
 }
 
 .modalHeader h1 {
@@ -534,17 +577,17 @@ a:hover {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -708,7 +751,7 @@ a:hover {
     margin: 10px 0 0;
     padding: 0;
     text-align: center;
-    color: 	#101010;
+    color: #101010;
 }
 
 .details h2 span {
@@ -731,15 +774,15 @@ button {
     border-radius: 5px;
 }
 
-    button:hover {
+button:hover {
     background-color: #0082e6;
     color: white;
-    }
+}
 
 
 /* CONTACT HREF TO CONTACT PAGE */
 .backgroundCard {
-      background-color: #181818;
+    background-color: #181818;
 }
 
 .contactCard {
@@ -773,7 +816,7 @@ button {
     background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 100%;  
+    width: 100%;
     font-size: 18px;
     margin: 0;
     background-color: #f1f1f1;
@@ -789,4 +832,3 @@ button {
     font-size: 22px;
     color: black;
 }
-
