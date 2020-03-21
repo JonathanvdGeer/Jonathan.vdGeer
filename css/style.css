@@ -537,6 +537,7 @@ h2 {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
+    text-align: center;
 }
 
 /* Modal Content */
@@ -560,6 +561,10 @@ h2 {
     margin-bottom: 1em;
 }
 
+.M-Agenda {
+    margin-top: 50px;
+}
+
 .modalTekst {
     color: #D3D3D3;
     text-align: center;
@@ -568,11 +573,6 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     padding: 0.5em;
-}
-
-.modalTekst h3 {
-    margin-top: 1em;
-    color: white;
 }
 
 /* The Close Button */
