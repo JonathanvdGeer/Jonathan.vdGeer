@@ -503,18 +503,6 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* MODAL POPUP (Background) */
 .modal {
     display: none;
@@ -552,9 +540,25 @@ h2 {
 
 .modalHeader h1 {
     font-family: roboto;
+    color: white;
+    margin-left: 27px;
+    align-content: center;
+}
+
+.modalHeader h2 {
+    color: yellow;
+    font-family: lato;
+    margin: 10px;
 }
 
 .modalHeader h3 {
+    font-family: roboto;
+    color: silver;
+    margin-bottom: 10px;
+    font-family: lato;
+}
+
+.modalHeader h4 {
     font-family: roboto;
     font-weight: bolder;
     color: goldenrod;
@@ -589,18 +593,6 @@ h2 {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* BUTTONS STYLE */
@@ -707,7 +699,7 @@ h2 {
 .box .socail-icon li a .fa {
     transition: 0.5s;
     font-size: 24px;
-    line-height: 50px;
+    line-height: 48px;
 }
 
 .box .socail-icon li a:hover .fa {
